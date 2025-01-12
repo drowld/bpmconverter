@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fbb03b;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+#bpm-input {
+    width: 80px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #2b2b2b;
+    color: #fbb03b;
+}
+
+button {
+    background: #333;
+    color: #fbb03b;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover, .decimal-buttons button.active {
+    background: #fbb03b;
+    color: #000;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.table-container {
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2b2b2b;
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 8px 10px;
+    border: 1px solid #444;
+    text-align: center;
+    color: #fff;
+}
+
+th {
+    background: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #222;
+}
+
+/* Italics for Hz mode */
+table.italic td, table.italic th {
+    font-style: italic;
+    color: #fbb03b;
+}
+
+button#unit-toggle.italic {
+    font-style: italic;
+}
